@@ -1,0 +1,33 @@
+//const fs=require('fs')
+//const name=require('./utils.js')
+//const add = require('./utils.js')
+const getNotes = require('./nodes.js')
+
+const validator = require('validator')
+const chalk = require('chalk')
+//fs.writeFileSync('notes.txt','My name is Shweta.')
+//Parameter 1: File name
+//Parameter 2: Text
+
+//Appending the file
+//fs.appendFileSync('notes.txt',"I study in Fergusson college!")
+//Parameter 1: File name
+//Parameter 2: Data to be appended
+
+//using exported varaiable
+//console.log(name)
+//const sum = add(2,3)
+//console.log(sum)
+
+//Calling the getNotes func from nodes.js file
+const text = getNotes()
+console.log(text)
+
+//console.log(validator.isEmail('abc@example.com'))
+console.log(chalk.green("Hello World!"))
+//console.log(chalk.bold("ABC"))
+//console.log(chalk.bgCyan("Hello"))
+//console.log(chalk.green.inverse("Yippppee"))
+//console.log(chalk.red("Yesss"))
+
+console.log(process.argv[2])
